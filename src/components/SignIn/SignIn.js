@@ -48,7 +48,7 @@ class SignIn extends React.Component {
             type="email"
             handleChange={this.handleChange}
             value={this.state.email}
-            label="email"
+            label="Email"
             required
           />
 
@@ -61,8 +61,12 @@ class SignIn extends React.Component {
             required
           />
           <div className="buttons">
-            <CustomButton type="submit">Sign in</CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            <CustomButton type="submit">SIGN IN</CustomButton>
+            <CustomButton
+              type="button"
+              onClick={signInWithGoogle}
+              isGoogleSignIn
+            >
               Sign in With Google
             </CustomButton>
           </div>
